@@ -11,4 +11,16 @@ function sendParams(id) {
   console.log(id);
   // this.$router.push("/blog/" + id);
 }
+
+definePageMeta({
+  validate(route){
+    return publishedPosts.some(p => p.id === route.params.id)
+  }
+})
+
+const publishedPosts = [
+  { id: '1', title: 'Hola mundo'},
+  { id: '2', title: 'Aeaaa'}
+]
+
 </script>
