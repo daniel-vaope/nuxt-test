@@ -1,6 +1,7 @@
 <!-- Componente Navbar -->
 <template>
     <nav>
+        <!-- Using nuxtLink to hydration -->
         <NuxtLink href="/">Home</NuxtLink>
         <NuxtLink href="/about">About</NuxtLink>
         <NuxtLink href="/about/faq">FAQ</NuxtLink>
